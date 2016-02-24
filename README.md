@@ -1,2 +1,2 @@
-#implement algorithms
-hey hey hey
+#implemention of algorithms in CLRS Chapter wise
+
