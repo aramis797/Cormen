@@ -21,7 +21,7 @@ public class InsertionSort{
 		System.out.println();
 	}
 	public static void main(String args[]){
-		int[] A = {5,2,4,6,1,3};
+		int[] A = {31,41,59,26,41,28};
 		int l = 6;
 		System.out.print("Before:-\t");printArray(A,l);
 		insertionSort(A,l);
