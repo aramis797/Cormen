@@ -1,6 +1,7 @@
 /*
-A modified version of INSERTION SORT.
+Insertion sort implementation
 It takes two arguments i.e array and its length
+and sorts the array.
 */
 
 #include <stdio.h>

@@ -1,5 +1,5 @@
 #include <stdio.h>
-void Merge(int A[],int n,int p,int q,int r){
+void Merge(int A[],int p,int q,int r){
 	int n1 = q-p+1;
 	int n2 = r-q;
 	int L[n1],R[n2];
@@ -17,17 +17,17 @@ void Merge(int A[],int n,int p,int q,int r){
 		}
 	}
 }
-void mergeSort(int A[],int n,int p,int r){
+void mergeSort(int A[],int p,int r){
 	if (p<r){
 		int q = (p+r)/2;
-		mergeSort(A,n,p,q);
-		mergeSort(A,n,q+1,r);
-		Merge(A,n,p,q,r);
+		mergeSort(A,p,q);
+		mergeSort(A,q+1,r);
+		Merge(A,p,q,r);
 	}
 }
 int main(){
 	int A[9]={5,4,3,2,1,6,8,7,9};
 	for(int i=0;i<9;i++) printf("%d ",A[i]);printf("\n");
-	mergeSort(A,9,0,9);
+	mergeSort(A,0,8);
 	for(int i=0;i<9;i++) printf("%d ",A[i]);printf("\n");
 	}
